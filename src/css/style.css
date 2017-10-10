@@ -6,15 +6,772 @@ html {
 }
 
 body {
-  font-family: Roboto;
+  font-family: Avenir;
   font-size: 1.6rem;
-  margin: 2rem;
-}
-
-header {
-  margin: 2rem 0;
+  margin: 0;
 }
 
 h1 {
   font-size: 3rem;
+}
+
+.social {
+  text-align: right;
+  padding-right: 3rem;
+  padding-top: 2.5rem;
+}
+
+.socials {
+  margin-left: .2rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  width: 120rem;
+  margin: auto;
+  /*margin: auto;
+  margin-top: 1.5rem;*/
+
+  &-links {
+    display: flex;
+    text-transform: uppercase;
+    list-style-type: none;
+    border-bottom: 5px solid var(--bg-color-red);
+    color: var(--bg-color-red);
+    width: 200rem;
+    justify-content: flex-start;
+
+    border-top: 1em;
+    margin-left: 91rem;
+    margin-right: -11rem;
+    padding-bottom: 1.3rem;
+
+    & a {
+      text-decoration: none;
+      color: var(--bg-color-red);
+    }
+  }
+
+  &-link {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+  }
+
+}
+
+/*.logo {
+  margin-left: 8rem;
+}*/
+
+.header {
+  color: var(--bg-color-red);
+  text-align: center;
+  font-family: edosz;
+  margin-top: 20rem;
+  font-size: 6rem;
+  padding-bottom: 34rem;
+  position: relative;
+
+  &-title {
+    font-size: 6rem;
+  }
+
+  &::after {
+    content: ' " Be brave, to be yourself " ';
+    color: #c7c7c7;
+    font-size: 6rem;
+    z-index: -1;
+    bottom: 6em;
+    right: 6em;
+    position: absolute;
+  }
+}
+
+/*.particles {
+  height: 100%;
+  background: red;
+}*/
+
+.whos {
+  padding: 2rem 4rem;
+}
+
+.who {
+  display: flex;
+  padding-left: 17rem;
+  padding-top: 10rem;
+  padding-bottom: 25rem;
+  position: relative;
+
+  &-title {
+    color: var(--bg-color-red);
+    font-family: edosz;
+    letter-spacing: .5em;
+  }
+
+  &-titles {
+    font-size: 5rem;
+  }
+
+  &-text {
+    display: flex;
+  }
+
+  &-texts {
+    color: var(--bg-color-text);
+    width: 34rem;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+
+  }
+
+  &::after {
+    content: '';
+    background-image: url(../assets/img/texture.png);
+    background-repeat: repeat;
+    background-position: right;
+    background-size: 10%;
+    position: absolute;
+    width: 33.5rem;
+    height: 150vh;
+    bottom: 5;
+    left: 0;
+    top: 0;
+    opacity: .7;
+    z-index: -1;
+  }
+}
+
+.scroll-down {
+  opacity: 1;
+  /*transition: all .5s ease-in 3s;*/
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--bg-color-red);
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  animation: bounce 2s infinite 2s;
+  transition: all .2s ease-in 3s;
+
+  &::before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: '';
+    border: 2px solid var(--bg-color-red);
+    border-width: 0 0 .2rem .2rem;
+  }
+}
+
+.up {
+  width: 100px;
+  height: 600px;
+  background-color: red;
+}
+
+.down {
+  width: 100px;
+  height: 400px;
+  background-color: yellow;
+}
+
+@keyframes bounce {
+
+  0%, 100%, 20%, 50%, 80% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
+
+}
+
+.line {
+  margin: .5rem;
+}
+
+.what {
+  background-color: var(--bg-color-red);
+  display: flex;
+  padding-left: 18rem;
+  padding-top: 5rem;
+
+  &-title {
+    color: white;
+    font-family: edosz;
+    letter-spacing: .5em;
+  }
+
+  &-titles {
+    font-size: 5rem;
+  }
+
+  &-text {
+    display: flex;
+
+  }
+
+  &-texts {
+    color: white;
+    width: 34rem;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+
+}
+
+.line-1 {
+  opacity: 0;
+}
+
+.skill {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  width: 35rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-left: 10rem;
+}
+
+.skills {
+  margin: 2rem 3rem;
+
+}
+
+.gallery {
+  display: flex;
+  padding-left: 17rem;
+  padding-bottom: 10rem;
+  position: relative;
+  padding-top: 10rem;
+
+  &-title {
+    color: var(--bg-color-red);
+    font-family: edosz;
+    letter-spacing: .5em;
+  }
+
+  &-titles {
+    font-size: 5rem;
+  }
+
+  &-my {
+    display: flex;
+    padding-bottom: 3rem;
+
+    &-concept {
+      margin-left: 2rem;
+      margin-top: .5rem;
+    }
+
+    &-concept p {
+      padding-top: 1rem;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: black;
+    }
+
+    &-link:hover {
+      color: var(--bg-color-red);
+      text-decoration: underline;
+
+    }
+  }
+
+  &::after {
+    content: '';
+    background-image: url(../assets/img/texture.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 10%;
+    position: absolute;
+    width: 33.5rem;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    opacity: .7;
+    z-index: -1;
+  }
+}
+
+.subtitle {
+  padding-top: 2rem;
+  font-size: 1.3rem;
+  color: var(--bg-color-red);
+}
+
+.contact {
+  background-color: var(--bg-color-red);
+  display: flex;
+  align-items: center;
+  padding: 7rem 18rem;
+
+  &-title {
+    color: white;
+    font-family: edosz;
+    letter-spacing: .5em;
+  }
+
+  &-titles {
+    font-size: 5rem;
+  }
+
+  &-text {
+    display: flex;
+  }
+
+  &-texts {
+    color: white;
+    width: 34rem;
+    line-height: 2.6rem;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+
+  &-mail {
+    display: flex;
+    align-items: center;
+    padding-bottom: 3rem;
+
+    & a {
+      text-decoration: none;
+      color: white;
+    }
+
+    & a:hover {
+      text-decoration: underline;
+    }
+
+    & img {
+      margin-right: 1rem;
+    }
+  }
+}
+
+/*MSK KUNST.KLIK*/
+
+/*.whos {
+  padding: 2rem 4rem;
+}*/
+
+.kunstklik {
+  display: flex;
+  padding-left: 22rem;
+  margin-top: 5rem;
+  /*padding-top: 20rem;
+
+  padding-bottom: 15rem;*/
+  position: relative;
+
+  &-title {
+    color: var(--bg-color-red);
+    font-family: edosz;
+    letter-spacing: .5em;
+  }
+
+  &-titles {
+    font-size: 5rem;
+  }
+
+  &-text {
+    display: flex;
+  }
+
+  &-texts {
+    color: var(--bg-color-text);
+    width: 34rem;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    margin-left: 2rem;
+
+  }
+
+  /*&-site {
+    position: relative;
+
+    & img {
+      position: absolute;
+      clip: rect(10px, 385px, 237px, 10px);
+      overflow-y: hidden;
+    }
+  }*/
+
+  &-site {
+    height: 237px;
+    overflow-y: scroll;
+    max-width: 100%;
+    margin-left: 3rem;
+
+    & img {
+      float: left;
+      overflow-y: scroll;
+      width: 100%;
+      transition: transform .25s ease;
+    }
+
+    & img:active {
+      transform: scale(2);
+    }
+  }
+}
+
+.klik {
+  position: relative;
+
+  &::after {
+    content: '';
+    background-image: url(../assets/img/texture.png);
+    background-repeat: repeat;
+    background-position: right;
+    background-size: 10%;
+    position: absolute;
+    width: 33.5rem;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    opacity: .7;
+    z-index: -1;
+  }
+}
+
+.card {
+  width: 70rem;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0 6rem;
+
+  &-link {
+    color: var(--bg-color-red);
+    text-decoration: none;
+    font-family: edosz;
+    padding-bottom: 6rem;
+  }
+
+  &-link:hover {
+    text-decoration: underline;
+  }
+
+  & div p {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    color: var(--bg-color-red);
+  }
+
+  & div img {
+    box-shadow: 0 5px 19px 0 rgba(0, 0, 0, .3), 0 13px 13px 0 rgba(0, 0, 0, .19);
+  }
+}
+
+.msk, .blauw, .doodle, .explane {
+  display: flex;
+  padding-left: 22rem;
+  margin-top: 5rem;
+  /*padding-top: 20rem;
+
+  padding-bottom: 15rem;*/
+  position: relative;
+
+  &-title {
+    color: var(--bg-color-red);
+    font-family: edosz;
+    letter-spacing: .5em;
+  }
+
+  &-titles {
+    font-size: 5rem;
+  }
+
+  &-text {
+    display: flex;
+  }
+
+  &-texts {
+    color: var(--bg-color-text);
+    width: 34rem;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    margin-left: 2rem;
+
+  }
+
+  /*&-site {
+    position: relative;
+
+    & img {
+      position: absolute;
+      clip: rect(10px, 385px, 237px, 10px);
+      overflow-y: hidden;
+    }
+  }*/
+
+  &-site {
+    height: 237px;
+    overflow-y: scroll;
+    max-width: 100%;
+    margin-left: 3rem;
+
+    & img {
+      float: left;
+      overflow-y: scroll;
+      width: 100%;
+      transition: transform .25s ease;
+    }
+
+    & img:active {
+      transform: scale(2);
+    }
+  }
+
+  &::after {
+    content: '';
+    background-image: url(../assets/img/texture.png);
+    background-repeat: repeat;
+    background-position: right;
+    background-size: 10%;
+    position: absolute;
+    width: 33.5rem;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    opacity: .7;
+    z-index: -1;
+  }
+}
+
+.kunstgame {
+  display: flex;
+  padding-left: 33rem;
+  margin-top: 10rem;
+  padding-top: 10rem;
+  position: relative;
+  flex-flow: row wrap;
+
+  &-title {
+    color: var(--bg-color-red);
+    font-family: edosz;
+    letter-spacing: .5em;
+  }
+
+  &-titles {
+    font-size: 5rem;
+  }
+
+  &-text {
+    display: flex;
+  }
+
+  &-texts {
+    color: var(--bg-color-text);
+    width: 34rem;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+
+  }
+
+  &-quiz {
+    width: 50%;
+    padding-top: 9.4rem;
+    margin-right: 2rem;
+
+    &-1 {
+      display: grid;
+      margin-bottom: 9rem;
+    }
+  }
+
+  &::after {
+    content: '';
+    background-image: url(../assets/img/texture.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 10%;
+    position: absolute;
+    width: 33.5rem;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    opacity: .7;
+    z-index: -1;
+  }
+}
+
+.shadow {
+  box-shadow: 0 5px 19px 0 rgba(0, 0, 0, .3), 0 13px 13px 0 rgba(0, 0, 0, .19);
+  margin-bottom: 2rem;
+}
+
+.websites {
+  color: var(--bg-color-red);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/*spekken*/
+
+.spek {
+  width: 100rem;
+  margin: auto;
+  padding-top: 15rem;
+
+  &::after {
+    content: '';
+    background-image: url(../assets/img/texture.png);
+    background-repeat: repeat;
+    background-position: left;
+    background-size: 10%;
+    position: absolute;
+    width: 33.5rem;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    top: 65rem;
+    opacity: .7;
+    z-index: -1;
+  }
+}
+
+.spekken {
+  display: flex;
+  width: 85rem;
+  justify-content: space-between;
+  padding: 4rem 0;
+
+  &-title {
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+  }
+
+  &-link {
+    color: var(--bg-color-red);
+    text-decoration: none;
+    font-family: edosz;
+  }
+
+  &-link:hover {
+    text-decoration: underline;
+  }
+
+  & div p {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--bg-color-red);
+  }
+
+}
+
+.speksite {
+  display: flex;
+  padding-left: 22rem;
+  margin-top: 5rem;
+  /*padding-top: 20rem;
+
+  padding-bottom: 15rem;*/
+  position: relative;
+
+  &-title {
+    color: var(--bg-color-red);
+    font-family: edosz;
+    letter-spacing: .5em;
+  }
+
+  &-titles {
+    font-size: 5rem;
+  }
+
+  &-text {
+    display: flex;
+  }
+
+  &-texts {
+    color: var(--bg-color-text);
+    width: 34rem;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    margin-left: 2rem;
+
+  }
+
+  &-site {
+    height: 237px;
+    overflow-y: scroll;
+    max-width: 100%;
+    margin-left: 3rem;
+
+    & img {
+      float: left;
+      overflow-y: scroll;
+      width: 100%;
+      transition: transform .25s ease;
+    }
+
+    & img:active {
+      transform: scale(2);
+    }
+  }
+
+  &::after {
+    content: '';
+    background-image: url(../assets/img/texture.png);
+    background-repeat: repeat;
+    background-position: right;
+    background-size: 10%;
+    position: absolute;
+    width: 33.5rem;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    opacity: .7;
+    z-index: -1;
+  }
+}
+
+/*blauw*/
+
+.blauw, .doodle, .explane {
+  padding-bottom: 29rem;
+}
+
+/*doodle*/
+
+.doodle-video, .explane-video {
+  margin-left: 3rem;
 }

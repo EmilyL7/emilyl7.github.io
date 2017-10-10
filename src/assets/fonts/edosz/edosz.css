@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'edosz';
+  src: url('edosz.woff2') format('woff2'),
+       url('edosz.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
