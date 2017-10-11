@@ -58,6 +58,10 @@ h1 {
     padding-right: 1rem;
   }
 
+  &-link:hover {
+    opacity: .5;
+  }
+
 }
 
 /*.logo {
