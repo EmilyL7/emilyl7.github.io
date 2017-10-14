@@ -39,7 +39,7 @@ h1 {
     list-style-type: none;
     border-bottom: 5px solid var(--bg-color-red);
     color: var(--bg-color-red);
-    width: 200rem;
+    width: 27rem;
     justify-content: flex-start;
 
     border-top: 1em;
@@ -105,7 +105,7 @@ h1 {
   display: flex;
   padding-left: 17rem;
   padding-top: 10rem;
-  padding-bottom: 25rem;
+  padding-bottom: 18rem;
   position: relative;
 
   &-title {
@@ -140,8 +140,8 @@ h1 {
     background-size: 10%;
     position: absolute;
     width: 33.5rem;
-    height: 150vh;
-    bottom: 5;
+    height: 100vh;
+    bottom: 0;
     left: 0;
     top: 0;
     opacity: .7;
