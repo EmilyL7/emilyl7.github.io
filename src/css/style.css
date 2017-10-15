@@ -120,6 +120,7 @@ h1 {
 
   &-text {
     display: flex;
+    text-align: justify;
   }
 
   &-texts {
@@ -230,7 +231,7 @@ h1 {
 
   &-text {
     display: flex;
-
+    text-align: justify;
   }
 
   &-texts {
@@ -346,6 +347,7 @@ h1 {
 
   &-text {
     display: flex;
+    text-align: justify;
   }
 
   &-texts {
@@ -387,9 +389,7 @@ h1 {
   display: flex;
   padding-left: 22rem;
   margin-top: 5rem;
-  /*padding-top: 20rem;
-
-  padding-bottom: 15rem;*/
+  padding-top: 3rem;
   position: relative;
 
   &-title {
@@ -404,6 +404,7 @@ h1 {
 
   &-text {
     display: flex;
+    text-align: justify;
   }
 
   &-texts {
@@ -502,10 +503,8 @@ h1 {
   display: flex;
   padding-left: 22rem;
   margin-top: 5rem;
-  /*padding-top: 20rem;
-
-  padding-bottom: 15rem;*/
   position: relative;
+  padding-top: 3rem;
 
   &-title {
     color: var(--bg-color-red);
@@ -519,6 +518,7 @@ h1 {
 
   &-text {
     display: flex;
+    text-align: justify;
   }
 
   &-texts {
@@ -528,7 +528,7 @@ h1 {
     margin-bottom: 1rem;
     font-size: 1.3rem;
     margin-left: 2rem;
-
+    text-align: justify;
   }
 
   /*&-site {
@@ -596,6 +596,7 @@ h1 {
 
   &-text {
     display: flex;
+    text-align: justify;
   }
 
   &-texts {
@@ -704,9 +705,7 @@ h1 {
   display: flex;
   padding-left: 22rem;
   margin-top: 5rem;
-  /*padding-top: 20rem;
-
-  padding-bottom: 15rem;*/
+  padding-top: 3rem;
   position: relative;
 
   &-title {
@@ -721,6 +720,7 @@ h1 {
 
   &-text {
     display: flex;
+    text-align: justify;
   }
 
   &-texts {
